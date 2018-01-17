@@ -7,6 +7,7 @@ int main(int argc, char** argv)  {
     file = fopen(argv[1], "r");
     //If no file exists, exit!
     if(!file) {
+        printf(stderr, "File does not exist");
         return -1;
     }
     //Read character by character until end of file
